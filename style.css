@@ -448,6 +448,13 @@ section .title::after {
   animation: blink-caret 0.75s step-end infinite;
 }
 
+/* Animation */
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #888e8d, 0 0 50px #1e3551;
+  }
+}
+
 /* Footer */
 footer {
   background: #111;
@@ -463,9 +470,79 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/* Animation */
-@keyframes pulsate {
-  0% {
-    box-shadow: 0 0 25px #888e8d, 0 0 50px #1e3551;
-  }
+/* CONTACT SECTION – Final */
+.contact-section {
+  padding: 100px 0;
+  background: radial-gradient(#e1efff, white);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+.contact-section h2::after {
+  content: "—Let's Connect—";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #1e3551;
+}
+.subtext {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+  font-weight: 400;
+}
+.contact-info {
+  max-width: 700px;
+  margin: auto;
+}
+.contact-info p {
+  margin: 12px 0;
+  font-size: 18px;
+  color: #222;
+}
+.contact-info a {
+  color: #1e3551;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.contact-info a:hover {
+  color: crimson;
+}
+.social-icons {
+  margin: 25px 0 10px;
+}
+.social-icons a {
+  font-size: 24px;
+  margin: 0 12px;
+  color: #1e3551;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: crimson;
+}
+.hire-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #1e3551;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid #1e3551;
+  transition: all 0.3s ease;
+}
+.hire-button:hover {
+  color: #1e3551;
+  background: transparent;
+  animation: pulsate 1s ease-in-out;
 }
