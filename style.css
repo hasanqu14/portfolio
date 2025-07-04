@@ -374,10 +374,10 @@ section .title::after {
   top: 0;
   background: #1e3551;
 }
-.skills-content .right .C#::before { width: 50%; }
-.skills-content .right .C++::before { width: 50%; }
-.skills-content .right .C::before { width: 50%; }
-.skills-content .right .Java::before { width: 60%; }
+.skills-content .right .c-sharp::before { width: 50%; }
+.skills-content .right .c-plus-plus::before { width: 50%; }
+.skills-content .right .c::before { width: 50%; }
+.skills-content .right .java::before { width: 60%; }
 .skills-content .right .servlet::before { width: 65%; }
 .skills-content .right .python::before { width: 50%; }
 .skills-content .right .html::before { width: 90%; }
