@@ -387,9 +387,18 @@ section .title::after {
 .skills-content .right .django::before { width: 50%; }
 
 /* Projects */
-.projects .title::after {
-  content: "What I did ? \n Click on project for Demo";
+.projects .title::before {
+  content: "What I did?";
+  display: block;
+  color: gray;
 }
+
+.projects .title::after {
+  content: "Click on project for Demo";
+  display: block;
+  color: darkgray;
+}
+
 .projects .carousel .card {
   background: #222;
   border-radius: 6px;
